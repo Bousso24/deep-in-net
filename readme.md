@@ -180,17 +180,17 @@ Un port :
 Les ports sont utilisés au niveau de la couche de transport pour identifier des applications spécifiques, tandis que les protocoles sont attribués à différentes couches du modèle OSI (ou à leurs équivalents dans le modèle TCP/IP) pour gérer des fonctions de communication distinctes. 
 Par exemple, le protocole HTTP (couche Application) utilise TCP (couche Transport) via le port 80 pour la communication web. 
 Protocole et couche OSI associés
-- Protocole    Couche OSI   Port TCP/UDP (si applicable)             Fonction principale  
-- HTTP         Application   (80) (port par défaut)                   Transfert de pages web
-- FTP          Application   (21) (commande) et (20)(données)         Transfert de fichiers
-- SMTP         Application   (25)                                     Envoi d'e-mails
-- DNS          Application   (53)                                     Résolution de noms de domaine en adresses IP
-- DHCP         Application   (67) et (68)                             Attribution automatique d'adresses IP 
-- TCP          Transport    (Utilise les ports de l'application)      Connexion fiable et orientée flux de donnée
-- UDP          Transport    (Utilise les ports de l'application)      Connexion non fiable (rapide et légère)
-- IP           Réseau       (Sans port spécifique)                    Routage des paquets entre les réseaux
-- ARP          Réseau / Liaison de données(Sans port spécifique)      Résolution d'adresses IP en adresses physiques (MAC)
-- Ethernet    Liaison de données / Physique(Sans port spécifique)     Protocoles de communication sur un réseau local
+- Protocole  ___ Couche OSI   ___  Port TCP/UDP (si applicable)       ___      Fonction principale  
+- HTTP    ___    Application  ___ (80) (port par défaut)          ___          Transfert de pages web
+- FTP     ___    Application  ___ (21) (commande) et (20)(données)    ___      Transfert de fichiers
+- SMTP    ___     Application  ___ (25)                        ___             Envoi d'e-mails
+- DNS     ___     Application  ___ (53)                        ___             Résolution de noms de domaine en adresses IP
+- DHCP    ___     Application  ___ (67) et (68)               ___              Attribution automatique d'adresses IP 
+- TCP     ___     Transport   ___ (Utilise les ports de l'application)  ___    Connexion fiable et orientée flux de donnée
+- UDP     ___     Transport   ___ (Utilise les ports de l'application)  ___    Connexion non fiable (rapide et légère)
+- IP      ___     Réseau      ___ (Sans port spécifique)               ___     Routage des paquets entre les réseaux
+- ARP     ___    Réseau / Liaison de données ___ (Sans port spécifique) ___    Résolution d'adresses IP en adresses physiques (MAC)
+- Ethernet ___   Liaison de données / Physique ___ (Sans port spécifique) ___    Protocoles de communication sur un réseau local
 
 #### La table de routage 
 La table de routage est un élément essentiel dans tout appareil réseau (PC, routeur, serveur).
